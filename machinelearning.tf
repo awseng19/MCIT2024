@@ -21,7 +21,7 @@ resource "azurerm_key_vault" "azurekeyvault" {
 }
 
 resource "azurerm_storage_account" "azurestorageaccount" {
-  name                     = "workspace-sa-maryam"
+  name                     = "workspace-maryam"
   location                 = azurerm_resource_group.mlrg-m.location
   resource_group_name      = azurerm_resource_group.mlrg-m.name
   account_tier             = "Standard"
