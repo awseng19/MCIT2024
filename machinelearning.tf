@@ -1,7 +1,7 @@
 data "azurerm_client_config" "current" {}
 
 resource "azurerm_resource_group" "mlrg-m" {
-  name     = "ml_rg-resources"
+  name     = "ml_rg-resources-maryam"
   location = "West Europe"
 }
 
