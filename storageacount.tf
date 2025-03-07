@@ -1,5 +1,5 @@
-/*resource "azurerm_storage_account" "mcitstorageaccount" {
-  name                     = "storageaccountname"
+/*resource "azurerm_storage_account" "mcitstorageaccount-maryam" {
+  name                     = "maryam"
   resource_group_name      = azurerm_resource_group.mcit420zz5um.name
   location                 = azurerm_resource_group.mcit420zz5um.location
   account_tier             = var.account_tier
@@ -16,7 +16,7 @@ variable "storage_account_names" {
   ]
 }
 
-resource "azurerm_storage_account" "mcitstorageaccountexample" {
+resource "azurerm_storage_account" "mcitstorageaccountexample-maryam" {
   count                    = length(var.storage_account_names)
   name                     = var.storage_account_names[count.index]
   resource_group_name      = azurerm_resource_group.mcit420zz5um.name
