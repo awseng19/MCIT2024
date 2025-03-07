@@ -13,7 +13,7 @@ resource "azurerm_application_insights" "applicationinsight" {
 }
 
 resource "azurerm_key_vault" "azurekeyvault" {
-  name                = "workspaceexamplekeyvault-maryam"
+  name                = "workspaceexamplekeyvaultmaryam"
   location            = azurerm_resource_group.mlrg-m.location
   resource_group_name = azurerm_resource_group.mlrg-m.name
   tenant_id           = data.azurerm_client_config.current.tenant_id
@@ -21,7 +21,7 @@ resource "azurerm_key_vault" "azurekeyvault" {
 }
 
 resource "azurerm_storage_account" "azurestorageaccount" {
-  name                     = "workspacestorageaccount-maryam"
+  name                     = "workspacestorageaccountmaryam"
   location                 = azurerm_resource_group.mlrg-m.location
   resource_group_name      = azurerm_resource_group.mlrg-m.name
   account_tier             = "Standard"
@@ -29,7 +29,7 @@ resource "azurerm_storage_account" "azurestorageaccount" {
 }
 
 resource "azurerm_machine_learning_workspace" "example" {
-  name                    = "example-workspace-maryam"
+  name                    = "example-workspacemaryam"
   location                = azurerm_resource_group.mlrg-m.location
   resource_group_name     = azurerm_resource_group.mlrg-m.name
   application_insights_id = azurerm_application_insights.applicationinsight.id
